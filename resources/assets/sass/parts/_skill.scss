@@ -1,0 +1,17 @@
+@import '../inc/vars';
+
+.skill {
+  clear: none;
+  color: #333;
+  float: left;
+  font-size: 18px;
+  line-height: 40px;
+  padding:25px;
+  width: 20%;
+  img{
+    width:75%;
+  }
+  @media(max-width:767px){
+    width:33.333%;
+  }
+}

@@ -1,0 +1,35 @@
+@import '../inc/vars';
+
+.nav-tabs a{
+  cursor: pointer;
+  .tab-buttons {
+    border-bottom: 1px solid #007095;
+    margin: 35px auto 65px;
+    .button {
+      margin: 0 2px 0 0;
+      &:not(.secondary) {
+        padding-bottom: 19px;
+      }
+    }
+  }
+}
+.tab-content{
+  @media(max-width:767px) {
+    padding-top:5px;
+    .company-logo {
+      margin-bottom: 30px;
+    }
+  }
+  @media(min-width:767px){
+    padding-top:35px;
+    &:not(.active){
+      display:none
+    }
+  }
+  .job-header{
+    margin-bottom: 26px;
+    padding: 25px 0;
+    min-height:150px;
+    overflow: auto;
+  }
+}

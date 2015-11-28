@@ -11,13 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    $data = [
-      'skills' => [
-          'php', 'html 5', 'css 3', 'javascript', 'mysql',
-          'laralve', 'vuejs', 'jquery', 'sass', 'bootstrap',
-          'git', 'emmet', 'illustrator', 'photoshop', 'ubuntu'
-      ]
-    ];
-    return view('welcome')->with($data);
-});
+Route::get('/', 'PagesController@home');
+Route::get('/{slug}', 'PagesController@show'); // history, contact, skills

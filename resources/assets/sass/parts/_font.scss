@@ -1,0 +1,16 @@
+@import '../inc/vars';
+
+nav, h1, h2, h3, h4, h5, .btn {
+  text-align: center;
+  margin: 0;
+}
+
+div.text-center-xs {
+  @media(max-width: 768px) {
+    text-align: center;
+    svg {
+      height: 65px;
+      margin-bottom: 25px;
+    }
+  }
+}

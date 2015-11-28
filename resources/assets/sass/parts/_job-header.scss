@@ -1,0 +1,30 @@
+@import '../inc/vars';
+
+.job-header {
+  & > div {
+    height: 50px;
+  }
+  .role {
+    font-size: 31px;
+    line-height: 25px;
+    padding-top: 28px;
+  }
+  .dates {
+    font-size: 15px;
+    color: #6b6b6b;
+    display: inline-block;
+    float: none;
+    clear: both;
+  }
+  .at-sign {
+    font-size: 5em;
+    color: #6b6b6b;
+  }
+  .company-logo svg, .company-logo img {
+    position: relative;
+  }
+  .subtext {
+    height: 25px;
+    font-weight: bold;
+  }
+}

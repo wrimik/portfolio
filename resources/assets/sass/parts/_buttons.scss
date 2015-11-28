@@ -1,0 +1,29 @@
+@import '../inc/vars';
+
+.btn {
+  border-radius:50px;
+  transition: box-shadow $aniDur, top $aniDur, background-color $aniDur, color $aniDur;
+  &.btn-lg{
+    font-size: 20px;
+    padding: 15px 36px;
+  }
+  &.btn-md{
+    font-size: 16px;
+    padding: 15px 36px;
+  }
+  &.white {
+    top: -3px;
+    position: relative;
+    &:not(:hover) {
+      top: 0;
+      background-color: #fff;
+      color: #6280AD;
+      box-shadow: $raisedShadow;
+    }
+    &:hover{
+      background-color:$active;
+      cursor: pointer;
+      color:#fff;
+    }
+  }
+}

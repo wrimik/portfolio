@@ -1,0 +1,32 @@
+@import '../inc/vars';
+
+nav.navbar{
+  border-radius:0;
+  background-color: $dark;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  margin-bottom:0;
+  .navbar-brand {
+    color: #fff;
+    font-size: 35px;
+  }
+  ul{
+    font-size:15px;
+    li{
+      margin-left:16px;
+      a{
+        transition:background-color $aniDur, color $aniDur;
+      }
+    }
+    li.active a{
+      background-color:$active;
+    }
+    li:not(.active) a{
+      color:#fff;
+      &:hover{
+        color:#333;
+      }
+    }
+    padding-top:6px;
+  }
+}

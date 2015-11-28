@@ -1,0 +1,12 @@
+
+.lead-in {
+  background: $dark;
+  @media(max-width:767px){
+    .btn {
+      clear: both;
+      display: block;
+      float: none;
+      margin: 0 auto;
+    }
+  }
+}

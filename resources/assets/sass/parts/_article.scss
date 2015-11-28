@@ -1,0 +1,14 @@
+@import '../inc/vars';
+
+article {
+  width: 90%;
+  max-width: 750px;
+  margin: 0 auto;
+  p {
+    font-size: 22px;
+    line-height: 41px;
+    a {
+      text-decoration: underline;
+    }
+  }
+}
