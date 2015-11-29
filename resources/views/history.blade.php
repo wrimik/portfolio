@@ -4,10 +4,27 @@
     <script>nav(1);</script>
 @stop
 @section('content')
+
+<!--
+
+    OKAY - HEADS UP REALLY QUICK
+
+    So you're going to notice that I include some SVG's below (for the company logos)
+    This makes the raw HTML look kinda sorta aweful.
+
+    Just know that in the context of the application itself, the SVG source has been
+    removed pretty far from anywhere that a developer might actually end up.
+
+    So while it may look bad here, this is not indicative of how my working source
+    code looks.
+
+-->
+
     <section id="history">
         <div class="container">
             <div class="row">
                 <h2>Work History</h2>
+
                 <ul class="nav nav-tabs hidden-xs">
                     <li role="presentation"
                         v-for="tab in tabs"
@@ -21,22 +38,27 @@
                     @include('resume.lojistic')
                     <hr class="visible-xs"/>
                 </div>
+
                 <div :class="{'active': active == 1}" class="tab-content">
                     @include('resume.aceapp')
                     <hr class="visible-xs"/>
                 </div>
+
                 <div :class="{'active': active == 2}" class="tab-content">
                     @include('resume.hcwi')
                     <hr class="visible-xs"/>
                 </div>
+
                 <div :class="{'active': active == 3}" class="tab-content">
                     @include('resume.parkdcs')
                     <hr class="visible-xs"/>
                 </div>
+
                 <div :class="{'active': active == 4}" class="tab-content">
                     @include('resume.oxfordsvi')
                     <hr class="visible-xs"/>
                 </div>
+
                 <div class="container hidden-xs">
                     <div class="col-xs-8 col-xs-offset-2 controls">
                         <div

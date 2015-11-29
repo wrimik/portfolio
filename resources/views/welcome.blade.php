@@ -1,23 +1,14 @@
 @extends('templates.site')
 @section('scripts')
-    <script>
-        nav(0);
-        var App = new Vue({
-            el: '#app',
-            data: {},
-            methods: {
-                convert: function ($event) {
-                    alert('Kinda like that.');
-                }
-            }
-        });
-    </script>
+    <script> nav(0); </script>
 @stop
 @section('content')
+
     <div class="jumbotron case text-center">
         <h1>Let's Make<br/>Awesome Stuff</h1>
         <a href="/contact" class="btn btn-lg white">HIRE THIS GUY</a>
     </div>
+
     <section>
         <div class="container">
             <article>
@@ -31,15 +22,17 @@
                 </p>
 
                 <p>
-                    My skill set includes full-stack web development, leading creative teams,
-                    database architecture, corporate level technical strategy (making things jive),
-                    building multi-tenant applications, and I have a background in design (but I'm
-                    just kinda okay at design).
+                    My skill set includes full-stack web development, leading
+                    creative teams, database architecture, corporate level technical
+                    strategy (making things jive), building multi-tenant applications,
+                    and I have a background in design (but I'm just kinda okay at
+                    design).
                 </p>
 
                 <p>
-                    I'm not in a rush to leave my current position, however, when I find the right
-                    opportunity in San Diego, I'll be moving down there from Orange County.
+                    I'm not in a rush to leave my current position, however, when I
+                    find the right opportunity in San Diego, I'll be moving down
+                    there from Orange County.
                 </p>
 
             </article>

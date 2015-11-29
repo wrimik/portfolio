@@ -12,6 +12,13 @@
     <script src="/js/skills.js"></script>
 @stop
 @section('content')
+
+<!--
+
+    This list of skills is populated by VueJS (which is basically Angular lite)
+    All of the images are SVG's because... well... I felt like it
+
+-->
     <section>
         <div id="skills" class="container">
             <div class="row">
