@@ -16,6 +16,9 @@ nav.navbar{
       margin-left:16px;
       a{
         transition:background-color $aniDur, color $aniDur;
+        &:hover, &:focus, &:active{
+          outline:none;
+        }
       }
     }
     li.active a{

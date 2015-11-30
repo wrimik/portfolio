@@ -1,6 +1,7 @@
 @import '../inc/vars';
 
 .job-header {
+  height:auto;
   & > div {
     height: 50px;
   }
@@ -8,6 +9,7 @@
     font-size: 31px;
     line-height: 25px;
     padding-top: 28px;
+    height:auto;
   }
   .dates {
     font-size: 15px;

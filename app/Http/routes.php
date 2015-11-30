@@ -13,3 +13,6 @@
 
 Route::get('/', 'PagesController@home');
 Route::get('/{slug}', 'PagesController@show'); // history, contact, skills
+
+Route::resource('/Open', 'OpenController');
+Route::resource('/Message', 'MessageController');

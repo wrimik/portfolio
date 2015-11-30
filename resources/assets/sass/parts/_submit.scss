@@ -1,0 +1,16 @@
+$green: #1ECD97;
+
+input.invalid{
+  border-color:#900;
+  background-color:#f2dede;
+}
+.btn.sent{
+  background-color:$green;
+  border-color:$green;
+}
+.alert-success {
+  background-color: #d4fcef;
+  border-color: $green;
+  color: $green;
+  font-weight: bold;
+}

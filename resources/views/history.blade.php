@@ -1,7 +1,9 @@
 @extends('templates.site')
 @section('scripts')
-    <script src="/js/history.js"></script>
-    <script>nav(1);</script>
+    <script>
+        nav(1);
+        VueHistory();
+    </script>
 @stop
 @section('content')
 
@@ -56,7 +58,6 @@
 
                 <div :class="{'active': active == 4}" class="tab-content">
                     @include('resume.oxfordsvi')
-                    <hr class="visible-xs"/>
                 </div>
 
                 <div class="container hidden-xs">

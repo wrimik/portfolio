@@ -2,14 +2,8 @@
 @section('scripts')
     <script>
         nav(2);
-        Skills = [
-            'php', 'html 5', 'css 3', 'javascript', 'mysql',
-            'laravel', 'vuejs', 'jquery', 'sass', 'bootstrap',
-            'git', 'emmet', 'illustrator', 'photoshop', 'ubuntu',
-            'angular', 'grunt', 'gulp','node','scrum'
-        ];
+        VueSkills();
     </script>
-    <script src="/js/skills.js"></script>
 @stop
 @section('content')
 
