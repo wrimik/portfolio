@@ -57,11 +57,23 @@ nav.navbar ul li:not(.active) a:hover {
   .nav-pills > li {
     display: inline-block;
     float: none;
-    font-size: 12px;
     padding-top: 12px;
   }
 
   .nav-pills > li:nth-child(1) {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 660px) {
+  nav.navbar ul > li {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 450px) {
+  nav.navbar ul > li {
+    font-size: 11px;
     margin-left: 0;
   }
 }

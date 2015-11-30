@@ -42,11 +42,19 @@ nav.navbar {
     > li {
       display: inline-block;
       float: none;
-      font-size: 12px;
       padding-top: 12px;
       &:nth-child(1){
         margin-left:0;
       }
     }
+  }
+}
+nav.navbar ul > li{
+  @media(max-width: 660px) {
+    font-size: 12px;
+  }
+  @media(max-width: 450px) {
+    font-size: 11px;
+    margin-left: 0;
   }
 }
