@@ -31,12 +31,6 @@ nav.navbar ul li a {
   transition: background-color 0.4s, color 0.4s;
 }
 
-nav.navbar ul li a:hover,
-nav.navbar ul li a:focus,
-nav.navbar ul li a:active {
-  outline: none;
-}
-
 nav.navbar ul li.active a {
   background-color: #4BA7F9;
 }
@@ -47,6 +41,29 @@ nav.navbar ul li:not(.active) a {
 
 nav.navbar ul li:not(.active) a:hover {
   color: #333;
+}
+
+@media (max-width: 660px) {
+  .navbar-brand {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-pills {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-pills > li {
+    display: inline-block;
+    float: none;
+    font-size: 12px;
+    padding-top: 12px;
+  }
+
+  .nav-pills > li:nth-child(1) {
+    margin-left: 0;
+  }
 }
 
 article {
@@ -272,6 +289,18 @@ input.invalid {
   border-color: #1ECD97;
   color: #1ECD97;
   font-weight: bold;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+nav.navbar ul li:hover,
+nav.navbar ul li:focus,
+nav.navbar ul li:active,
+nav.navbar ul li a:hover,
+nav.navbar ul li a:focus,
+nav.navbar ul li a:active {
+  outline: none;
 }
 
 .skill {

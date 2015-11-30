@@ -1,35 +1,52 @@
 @import '../inc/vars';
 
-nav.navbar{
-  border-radius:0;
+nav.navbar {
+  border-radius: 0;
   background-color: $dark;
   padding-top: 14px;
   padding-bottom: 15px;
-  margin-bottom:0;
+  margin-bottom: 0;
   .navbar-brand {
     color: #fff;
     font-size: 35px;
   }
-  ul{
-    font-size:15px;
-    li{
-      margin-left:16px;
-      a{
-        transition:background-color $aniDur, color $aniDur;
-        &:hover, &:focus, &:active{
-          outline:none;
-        }
+  ul {
+    font-size: 15px;
+    li {
+      margin-left: 16px;
+      a {
+        transition: background-color $aniDur, color $aniDur;
       }
     }
-    li.active a{
-      background-color:$active;
+    li.active a {
+      background-color: $active;
     }
-    li:not(.active) a{
-      color:#fff;
-      &:hover{
-        color:#333;
+    li:not(.active) a {
+      color: #fff;
+      &:hover {
+        color: #333;
       }
     }
-    padding-top:6px;
+    padding-top: 6px;
+  }
+}
+
+@media(max-width: 660px) {
+  .navbar-brand {
+    width: 100%;
+    text-align: center;
+  }
+  .nav-pills {
+    width:100%;
+    text-align: center;
+    > li {
+      display: inline-block;
+      float: none;
+      font-size: 12px;
+      padding-top: 12px;
+      &:nth-child(1){
+        margin-left:0;
+      }
+    }
   }
 }
