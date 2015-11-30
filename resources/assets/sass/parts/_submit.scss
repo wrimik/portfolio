@@ -1,8 +1,14 @@
-$green: #1ECD97;
+@import '../inc/vars';
 
 input.invalid{
   border-color:#900;
   background-color:#f2dede;
+}
+.submit-btn{
+  width:150px;
+  @include transition(width 1s, background-color 1s);
+  &.pending{ width: 150px; }
+  &.sending, &.sent{ width: 100px; }
 }
 .btn.sent{
   background-color:$green;

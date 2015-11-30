@@ -38,18 +38,13 @@
                         </div>
                         <div class="form-group">
                             <label for="">Message</label>
-                        <textarea v-model="Message.message"
-                                  class="form-control"></textarea>
+                            <textarea v-model="Message.message"
+                                      class="form-control"></textarea>
                         </div>
                         <div class="form-group">
                             <div v-if="invalidHint" class="alert alert-danger" role="alert">
                                 @{{ invalidHint }}
                             </div>
-                            <div v-if="status == 'sent'" class="alert alert-success text-center" role="alert">
-                                Got it! <br/>
-                                We will talk soon!
-                            </div>
-
 
                             <div v-on:click="send()"
                                  v-bind:class="status"
@@ -59,6 +54,13 @@
                                    class="fa fa-spinner fa-spin"></i>
                                 <i v-if="status == 'sent'"
                                    class="fa fa-check"></i>
+                            </div>
+                        </div>
+                        <div v-if="status == 'sent'" class="col-xs-12">
+                            <hr/>
+                            <div class="alert alert-success text-center" role="alert">
+                                Got it! <br/>
+                                We will talk soon!
                             </div>
                         </div>
                     </form>

@@ -5,8 +5,11 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
     <meta name="description"
-          content="Mike Wright's resume"/>
+          content="Mike Wright's Resume"/>
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
+
+    <link rel="icon" type="image/png" href="/images/favicon.ico"/>
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.ico"/>
 
 <!-- title and ascii -->
 
