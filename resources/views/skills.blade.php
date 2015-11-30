@@ -14,7 +14,7 @@
 
 -->
     <section>
-        <div id="skills" class="container">
+        <div id="skills" class="container v-cloak">
             <div class="row">
                 <h2>Stuff I Know</h2>
                 <div v-for="skill in skills" class="text-center skill">

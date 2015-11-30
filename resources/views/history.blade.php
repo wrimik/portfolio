@@ -22,7 +22,7 @@
 
 -->
 
-    <section id="history">
+    <section id="history" class="v-cloak">
         <div class="container">
             <div class="row">
                 <h2>Work History</h2>
