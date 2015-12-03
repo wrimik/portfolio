@@ -8,8 +8,8 @@
           content="Mike Wright's Resume"/>
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
 
-    <link rel="icon" type="image/png" href="/images/favicon.ico"/>
-    <link rel="shortcut icon" type="image/png" href="/images/favicon.ico"/>
+    <link rel="icon" type="image/png" href="/images/favicon.ico?"/>
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.ico?"/>
 
 <!-- title and ascii -->
 

@@ -18,7 +18,10 @@
             <div class="row">
                 <h2>Stuff I Know</h2>
                 <div v-for="skill in skills" class="text-center skill">
-                    <img v-bind:src="svg(skill)" />
+                    <svg preserveAspectRatio="xMinYMin slice"
+                         width="100%" viewBox="0 0 145 131.667">
+                        <use v-bind:xlink:href="svg(skill)" ></use>
+                    </svg>
                     <br/>
                     @{{ skill }}
                 </div>
@@ -26,6 +29,10 @@
         </div>
     </section>
 
+<!--  import all svg's -->
+<div style="width:0;height:0; overflow:hidden;">
+    @include('parts.skills-assets.skills')
+</div>
     @include('parts.lead-in', [
         'btns' => [
             ['url'=>'/history', 'text' => 'WORK HISTORY'],

@@ -17,7 +17,7 @@ function VueSkills() {
             svg: function (skill) {
                 var alias = skill;
                 alias = alias.replace(' ', '');
-                return '/images/' + alias + '.svg';
+                return '#' + alias;
             },
             png: function (skill) {
                 var alias = skill;

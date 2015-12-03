@@ -27,7 +27,6 @@ class CreateOpensTable extends Migration
      */
     public function down()
     {
-        Schema::dropTable('message_id');
-        Schema::dropTable('opens');
+        Schema::drop('opens');
     }
 }

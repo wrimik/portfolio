@@ -17,7 +17,7 @@ class CreateMessagesTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('phone');
-            $table->text('message');
+            $table->text('comments');
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ class CreateMessagesTable extends Migration
      */
     public function down()
     {
-        Schema::dropTable('messages');
+        Schema::drop('messages');
     }
 }

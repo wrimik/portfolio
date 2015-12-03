@@ -1,6 +1,9 @@
 @extends('templates.site')
 @section('scripts')
-    <script>nav(3);</script>
+    <script>
+        nav(3);
+        VueMessage();
+    </script>
 @stop
 @section('content')
     <section>
@@ -38,7 +41,7 @@
                         </div>
                         <div class="form-group">
                             <label for="">Message</label>
-                            <textarea v-model="Message.message"
+                            <textarea v-model="Message.comments"
                                       class="form-control"></textarea>
                         </div>
                         <div class="form-group">

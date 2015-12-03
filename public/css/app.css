@@ -343,7 +343,8 @@ nav.navbar ul li a:active {
   width: 20%;
 }
 
-.skill img {
+.skill img,
+.skill svg {
   width: 75%;
 }
 
