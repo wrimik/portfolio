@@ -38,9 +38,10 @@ class MessageController extends Controller
      */
     public function store(Request $request)
     {
-        $message = Message::create($request->get('Message'));
+        $msg = Message::create($request->get('Message'));
         //send email
-        $this->sendContactResponse($message);
+        $this->sendMessage($request->get('Message'));
+        $this->sendContactResponse($msg);
     }
 
     /**
@@ -54,6 +55,18 @@ class MessageController extends Controller
         Mail::queue('emails.contact-response', ['greeting' => $greeting], function ($m) use ($message) {
             $m->from('autobot@wrimik.com', 'Mike Wright');
             $m->to($message->email, $message->name)->subject('Thanks!');
+        });
+    }
+    /**
+     * responds to contact form submissions
+     * @param Request $request
+     * @param $id
+     */
+    public function sendMessage($message)
+    {
+        Mail::queue('emails.contact-alert', $message, function ($m) {
+            $m->from('autobot@wrimik.com', 'Mike Wright');
+            $m->to('withswivelaction@gmail.com', 'Mike')->subject('WRIMIK FORM!');
         });
     }
 
