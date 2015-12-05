@@ -147,6 +147,7 @@ h2 {
   padding: 65px 0;
   background-size: cover;
   box-shadow: 0 0 2px #000 inset;
+  background-color: #333;
 }
 
 .jumbotron h1 {
