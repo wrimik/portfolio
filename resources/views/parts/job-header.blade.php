@@ -14,7 +14,7 @@
                 @
             </div>
             <div class="col-xs-12 pull-left text-center-xs col-sm-5 text-right role">
-                {{ $position }} <br/>
+                {{ $position }}<br/>
                     <span class="dates">
                         {{ $dates }}
                     </span>

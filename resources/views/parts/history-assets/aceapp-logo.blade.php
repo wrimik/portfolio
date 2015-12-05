@@ -1,7 +1,7 @@
 <svg version="1.1" id="aceapp"
      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
      viewBox="0 0 538 171"
-     style="max-height:max-height: 65px;top: 26px; width:230px"
+     style="height: 61px;top: 28px;width: 192px;"
      enable-background="new 0 0 536.667 170.667"
      xml:space="preserve">
 <g>

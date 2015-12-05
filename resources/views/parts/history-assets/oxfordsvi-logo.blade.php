@@ -1,7 +1,7 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
      viewBox="0 0 1007.95 337.483"
      enable-background="new 0 0 1007.95 337.483"
-     style="max-height: 65px; top: 23px;"
+     style="height: 65px; top: 23px;width: 194px;"
 	 xml:space="preserve">
 <g>
 	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="381.8979" y1="-70.1011" x2="381.8979" y2="236.6187">

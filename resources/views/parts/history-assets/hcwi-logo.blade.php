@@ -1,6 +1,7 @@
 <svg version="1.1"
      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     viewBox="0 0 462 121" style="max-height: 65px;top: 22px;"
+     viewBox="0 0 462 121"
+     style="height: 65px;top: 24px;width: 247px;"
      enable-background="new 0 0 394.334 120" xml:space="preserve">
 	 <g id="hcwi">
 <g>

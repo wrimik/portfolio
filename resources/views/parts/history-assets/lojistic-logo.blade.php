@@ -1,5 +1,5 @@
 <svg version="1.1"
-     style="max-height: 65px;top: 26px;"
+     style="height: 65px;top: 26px;width: 240px;"
      viewBox="0 0 462 121"
      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px">
     <g id="lojistic">

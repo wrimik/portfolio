@@ -279,6 +279,7 @@ h2 {
 .job-header .company-logo svg,
 .job-header .company-logo img {
   position: relative;
+  width: 65%;
 }
 
 .job-header .subtext {

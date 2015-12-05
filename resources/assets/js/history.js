@@ -12,7 +12,8 @@ function VueHistory(){
         methods:{
             set: function(index){
                 this.$data.active = index;
-                scrollTo('.job-header:visible');
+                //scrollTo('.job-header:visible');
+                scrollTo('#history .nav');
             }
         }
     });
