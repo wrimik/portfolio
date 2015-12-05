@@ -25,8 +25,7 @@
                     My skill set includes full-stack web development, leading
                     creative teams, database architecture, corporate level technical
                     strategy (making things jive), building multi-tenant applications,
-                    and I have a background in design (but I'm just kinda okay at
-                    design).
+                    and I have a background in design.
                 </p>
 
                 <p>
