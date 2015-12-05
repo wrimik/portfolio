@@ -155,8 +155,12 @@ h2 {
   text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
 }
 
-.case {
+.jumbotron.case {
   background-image: url("/images/case.jpg");
+}
+
+.jumbotron.lost {
+  background-image: url("/images/lost.jpg");
 }
 
 .lead-in {

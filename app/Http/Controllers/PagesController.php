@@ -17,7 +17,21 @@ class PagesController extends Controller
      */
     public function show($slug)
     {
-        return view($slug);
+        $view = view($slug);
+        return $view;
+    }
+
+    public function history()
+    {
+        return view('history');
+    }
+    public function contact()
+    {
+        return view('contact');
+    }
+    public function skills()
+    {
+        return view('skills');
     }
 
     public function home()

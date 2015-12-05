@@ -12,7 +12,9 @@
 */
 
 Route::get('/', 'PagesController@home');
-Route::get('/{slug}', 'PagesController@show'); // history, contact, skills
+Route::get('/history', 'PagesController@history');
+Route::get('/contact', 'PagesController@contact');
+Route::get('/skills', 'PagesController@skills');
 
 Route::resource('/Open', 'OpenController');
 Route::resource('/Message', 'MessageController');
