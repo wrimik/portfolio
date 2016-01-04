@@ -23,15 +23,9 @@
 
                 <p>
                     My skill set includes full-stack web development, leading
-                    creative teams, database architecture, corporate level technical
-                    strategy (making things jive), building multi-tenant applications,
-                    and I have a background in design.
-                </p>
-
-                <p>
-                    I'm not in a rush to leave my current position, however, when I
-                    find the right opportunity in San Diego, I'll be moving down
-                    there from Orange County.
+                    creative teams, building multi-tenant applications,
+                    database architecture, corporate level technical
+                    strategy (making things jive), and I have a background in design.
                 </p>
 
             </article>
@@ -40,7 +34,7 @@
 
     @include('parts.lead-in', [
         'btns' => [
-            ['url'=>'/history', 'text' => 'WORK HISTORY'],
+            ['url'=>'/portfolio', 'text' => 'PORTFOLIO'],
             ['url'=>'/contact', 'text' => 'GET IN TOUCH']
         ]
     ])

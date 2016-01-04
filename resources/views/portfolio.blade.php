@@ -211,6 +211,10 @@
                                 pages quickly and consistently, and it keeps the code base as
                                 small as possible.
                             </p>
+                            <hr/>
+                            <p style="text-align:center">
+                                <b>More examples coming soon!</b>
+                            </p>
                         </div>
                     </div>
                 </div>
