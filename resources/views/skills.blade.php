@@ -1,7 +1,7 @@
 @extends('templates.site')
 @section('scripts')
     <script>
-        nav(2);
+        nav(3);
         VueSkills();
     </script>
 @stop

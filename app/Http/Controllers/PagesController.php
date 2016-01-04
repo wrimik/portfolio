@@ -25,6 +25,10 @@ class PagesController extends Controller
     {
         return view('history');
     }
+    public function portfolio()
+    {
+        return view('portfolio');
+    }
     public function contact()
     {
         return view('contact');
@@ -33,7 +37,6 @@ class PagesController extends Controller
     {
         return view('skills');
     }
-
     public function home()
     {
         return view('welcome');

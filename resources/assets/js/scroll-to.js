@@ -1,5 +1,6 @@
 
 function scrollTo(target) {
     var t = $(target).offset().top;
-    $("html, body").animate({scrollTop: t}, 700)
+    //stop prevents queueing
+    $("html, body").stop().animate({scrollTop: t}, 700)
 }

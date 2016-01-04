@@ -1,8 +1,7 @@
 @extends('templates.site')
 @section('scripts')
     <script>
-        nav(3);
-        VueMessage();
+        nav(4);
     </script>
 @stop
 @section('content')

@@ -1,0 +1,47 @@
+#portfolio {
+  img {
+    max-width: 100%;
+  }
+}
+
+.project-title {
+  min-height: 45px;
+  padding-bottom: 45px;
+}
+
+.screen {
+  margin-bottom: 75px;
+  h4 {
+    text-align: left;
+  }
+}
+
+#lojistic-screens {
+  .ls-thumbnails {
+    padding-top: 45px;
+    img {
+      max-width: 35px;
+      border: 2px solid #fff;
+      margin-right: 10px;
+      &:hover {
+        cursor: pointer;
+        border: 2px solid #00b3ee;
+      }
+      &.active {
+        border-color: #00b3ee;
+      }
+    }
+  }
+  .image-viewer {
+    border: 2px solid #ddd;
+    height: 340px;
+    overflow-y: scroll;
+    padding: 0;
+    resize: vertical;
+    margin-bottom: 60px;
+    img {
+      max-width: none;
+      width: 100%;
+    }
+  }
+}

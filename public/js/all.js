@@ -27,13 +27,29 @@ function VueHistory(){
         },
         methods:{
             set: function(index){
-                this.$data.active = index;
-                //scrollTo('.job-header:visible');
-                scrollTo('#history .nav');
+                if(0 <= index && index < History.tabs.length){
+                    this.$data.active = index;
+                    //scrollTo('.job-header:visible');
+                    scrollTo('#history .nav');
+                }
             }
         }
     });
+
+    $(document).keydown(function(e) {
+        switch(e.which) {
+            case 37: // left
+                History.set(History.active-1);
+                break;
+            case 39: // right
+                History.set(History.active+1);
+                break;
+            default: return; // exit this handler for other keys
+        }
+        //e.preventDefault(); // prevent the default action (scroll / move caret)
+    });
 }
+
 /**
  * Handles form submissions
  * @type {Vue}
@@ -99,7 +115,8 @@ function nav(n) {
 
 function scrollTo(target) {
     var t = $(target).offset().top;
-    $("html, body").animate({scrollTop: t}, 700)
+    //stop prevents queueing 
+    $("html, body").stop().animate({scrollTop: t}, 700)
 }
 /**
  * Initiates Skills
