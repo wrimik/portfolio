@@ -2,6 +2,7 @@
 @section('scripts')
     <script>
         nav(4);
+        VueMessage();
     </script>
 @stop
 @section('content')
@@ -18,7 +19,7 @@
                         949.910.7277
                         <hr/>
                     </div>
-                    <form id="message" action="">
+                    <form id="message" action="" v-cloak>
                         <div class="form-group">
                             <label for="">Name</label>
                             <input v-model="Message.name"
